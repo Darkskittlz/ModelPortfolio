@@ -56,7 +56,7 @@ export const IntroGridContainer = styled.div`
 `
 
 export const IntroContainer = styled.div`
-    height: 15vh;
+    height: 100px;
     width: 350px;
     align-items: center;
     display: flex;
@@ -108,8 +108,9 @@ export const GridContainer = styled.div`
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 960px){
     height: 80vh;
@@ -119,119 +120,20 @@ export const GridContainer = styled.div`
 
 export const Grid2Container = styled.div`
   display: flex;
+  position: relative;
   z-index:999;
-  width: 100%;
-  margin-top: 20px;
+  width: 20%;
   justify-content: center;
+  align-items: flex-end;
 `
-
-export const Row = styled.div`
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  z-index: 999;
-  margin-right: 5px;
-  backdrop-filter: blur(10px);
-  height: 400px;
-  width: 50%;
-  max-width: 889px;
-
-  @media only screen and (min-width: 781px) and (max-width: 1275px){
-     justify-content: flex-start;
-     backdrop-filter: none;
-     height: 442px;
-     width: 100%;
-    }
-
-  @media only screen and (max-width: 960px){
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
-      backdrop-filter: none;
-    }
-`
-
-export const Col = styled.div`
-  display: flex;
-  z-index: 999;
-  height: 100%;
-  justify-content: center;
-  border-radius: 10px;
-  margin-left: 5px;
-
-  @media only screen and (max-width: 768px){
-      width: 100%;
-      height: 80%;
-    }
+export const ImageGridContainer = styled.div`
+  display: block;
+  flex-direction: column;
+  height: 65vh;
+  object-fit: cover;
 
   img {
-    width: 100%;
-    height: 100%;
-    margin-left: -10px;
-    display: flex;
     object-fit: cover;
-    align-content: center;
-    border-radius: 10px;
-    opacity: 1;
-
-    @media only screen and (max-width: 768px){
-      width: 100%;
-    }
+    height: 25vh;
   }
-`
-
-export const Col2 = styled.div`
-  display: flex;
-  border-radius: 10px;
-  opacity: 0.9;
-  opacity: 1;
-  width: 68%;
-  flex-direction: column;
-  z-index: 999;
-  height: 100%;
-  
-  @media only screen and (max-width: 960px){
-    display: flex;
-    flex: flex-wrap;
-    width: 100%;
-    height: 100%;
-    align-content: flex-end;
-    justify-content: space-between;
-  }
-`
-
-export const Col2Text = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  z-index: 999;
-  border-radius: 10px;
-  justify-content: center;
-  align-content: start;
-
-  h1 {
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: underline;
-    color: white;
-  }
-
-  h3 {
-    text-align: left;
-    color: white;
-    font-size: 14px;
-    padding-left: 5px;
-
-    @media screen and (max-width: 860px){
-      width: 97%;
-      padding: 5px;
-      border-radius: 10px;
-    }
-  }
-
-  @media screen and (max-width: 860px) {
-    backdrop-filter: blur(10px);
-  }
-
 `

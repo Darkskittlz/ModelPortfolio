@@ -1,5 +1,6 @@
 .chakra-button {
     height: 20px;
+    position: fixed;
 }
 
 @media screen and (max-width: 960px) {
