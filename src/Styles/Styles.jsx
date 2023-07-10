@@ -175,10 +175,13 @@ export const ImageGridContainer = styled.div`
     width: 100%;
     grid-template-columns: 1fr;
     margin-top: -159px;
-    margin-left: 12%;
-
+    margin-left: 3%;
+    
     img {
+      border-radius: 10px;
+      margin-bottom: 1px;
       height: 24vh;
+      width: 96.5%;
     }
   }
 `
