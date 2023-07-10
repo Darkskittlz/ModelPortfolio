@@ -1,26 +1,35 @@
 import styled, { keyframes } from 'styled-components';
 
 export const BodyContainer = styled.div`
-    display: flex;
-    width: 61%;
-    margin-left: 20%;
-    margin-right: 20%;
-    flex-direction: column;
-    justify-content; center;
-    z-index: 999;
-    position: fixed;
-    top: 0; 
-    overflow-y: scroll;
-    padding: 20px;
-    padding-bottom: 40px;
+  display: flex;
+  width: 72%;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex-direction: column;
+  justify-content; center;
+  z-index: 999;
+  position: fixed;
+  top: 0; 
+  overflow-y: scroll;
+  padding: 20px;
+  padding-bottom: 40px;
 
+  @media only screen and (max-width: 1440px){
+    padding-bottom: 144px;
+  }
 
-    @media screen and (max-width: 960px) {
-        width: 100%;
-        height: 100vh;
-        margin-left: 0px;
-        margin-top: 20px;
-    }
+  @media only screen and (max-width: 1024px){
+    width: 100%;
+    margin-left: 0%;
+    height: 88vh;
+  }
+
+  @media screen and (max-width: 960px) {
+      width: 100%;
+      height: 105vh;
+      margin-left: 0px;
+      margin-top: 20px;
+  }
 `
 
 export const NavContainer = styled.div`
@@ -33,6 +42,8 @@ export const NavContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: flex;
     box-shadow: 0 0 10px #09DEEE; 
+
+a
 
     @media screen and (max-width: 960px) {
       margin-top: 40px;
@@ -106,8 +117,7 @@ export const IntroContainer = styled.div`
 `
 
 export const GridContainer = styled.div`
-  width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
   flex-direction: column;
   display: flex;
@@ -117,6 +127,10 @@ export const GridContainer = styled.div`
   @media only screen and (max-width: 960px){
     height: 72vh;
     overflow-y: scroll;
+  }
+
+  @media only screen and (max-width: 430px){
+    height: 75vh;
   }
 `
 
@@ -129,21 +143,43 @@ export const Grid2Container = styled.div`
   align-items: flex-end;
 `
 export const ImageGridContainer = styled.div`
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   flex-direction: column;
-  height: 65vh;
+  height: 64vh;
   object-fit: cover;
-  width: 100%;
 
   img {
     object-fit: cover;
     height: 25vh;
   }
 
-  @media only screen and (max-width: 960px){
+  @media only screen and (max-width: 1759px){
+    height: 50vh;
+  }
+
+  @media only screen and (max-width: 1024px){
+    margin-left: 0px;
+  }
+
+  @media only screen and (max-width: 768px){
+    grid-template-columns: 1fr 1fr;
+    
+    img {
+      height: 27vh;
+    }
+  }
+
+  @media only screen and (max-width: 430px){
     width: 100%;
-    margin-left: 5%;
-    margin-top: -97px;
+    grid-template-columns: 1fr;
+    margin-top: -159px;
+    margin-left: 12%;
+
+    img {
+      height: 24vh;
+    }
   }
 `
 

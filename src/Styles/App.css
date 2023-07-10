@@ -8,4 +8,8 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+
+    @media only screen and (max-width: 430px) {
+        width: 96.5%;
+    }
 }
