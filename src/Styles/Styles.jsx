@@ -2,9 +2,9 @@ import styled, { keyframes } from 'styled-components';
 
 export const BodyContainer = styled.div`
     display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 61%;
+    margin-left: 20%;
+    margin-right: 20%;
     flex-direction: column;
     justify-content; center;
     z-index: 999;
@@ -16,10 +16,10 @@ export const BodyContainer = styled.div`
 
 
     @media screen and (max-width: 960px) {
-        width: 95%;
+        width: 100%;
         height: 100vh;
-        margin-left: 2.5%;
-        margin-top: -50px;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 `
 
@@ -53,6 +53,10 @@ export const IntroGridContainer = styled.div`
     justify-content: center;
     display: flex;
     margin-top: 20px;
+
+    @media screen and (max-width: 960px) {
+      margin-top: 0px;
+    }
 `
 
 export const IntroContainer = styled.div`
@@ -93,13 +97,10 @@ export const IntroContainer = styled.div`
     @media screen and (max-width: 960px) {
       width: 90%;
       height: 70px;
-      margin-left: 2%;
-      display: none;
 
       h1 {
         flex-direction: column;
         font-size: 18px;
-        margin-bottom: -37px;
       }
     }
 `
@@ -107,13 +108,14 @@ export const IntroContainer = styled.div`
 export const GridContainer = styled.div`
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   flex-direction: column;
   display: flex;
+  justify-content: center;
   align-items: center;
 
   @media only screen and (max-width: 960px){
-    height: 80vh;
+    height: 72vh;
     overflow-y: scroll;
   }
 `
@@ -131,9 +133,44 @@ export const ImageGridContainer = styled.div`
   flex-direction: column;
   height: 65vh;
   object-fit: cover;
+  width: 100%;
 
   img {
     object-fit: cover;
     height: 25vh;
   }
+
+  @media only screen and (max-width: 960px){
+    width: 100%;
+    margin-left: 5%;
+    margin-top: -97px;
+  }
+`
+
+export const SocialGridContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  bottom: 0;
+  border-radius: 10px;
+  position: fixed;
+  
+  img {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 960px){
+    margin-bottom: 10px;
+  }
+
+`
+
+export const SocialContainer = styled.div`
+  backdrop-filter: blur(20px);
+  background-color: #1d1d1d;
+  padding: 15px 8px 15px 8px;
+  border-radius: 10px;
 `

@@ -45,7 +45,6 @@ export default function Homepage() {
 
                 <GridContainer>
                     <MyGallery />
-                    {/* <ChakraModal /> */}
                 </GridContainer>
             </BodyContainer>
         </>

@@ -53,7 +53,7 @@ const TimeContainer = styled.div`
 
     h1 {
         font-size: 25px;
-        color: white;
+        color: #000000;
         font-weight: 600;
         margin-bottom: 0px;
     }
@@ -70,8 +70,8 @@ const DateContainer = styled.div`
 
     h1 {
         font-size: 23px;
-        font-weight: 600;
-        color: white;
+        font-weight: 500;
+        color: #000000;
         margin-bottom: 0px;
     }
 `
@@ -169,8 +169,8 @@ export default function ChakraModal() {
                     padding: "20px",
                     cursor: "pointer",
                     boxShadow: "0 0 40px rgb(1,74,250)",
-                    background: "rgb(1,74,250)",
-                    background: "linear-gradient(127deg, rgba(1,74,250,1) 0%, rgba(0,233,71,1) 100%)"
+                    background: "rgb(9,9,121)",
+                    background: "linear-gradient(165deg, rgba(9,9,121,1) 0%, rgba(1,156,188,1) 100%)"
                 }}
             >Contact</Button>
 
@@ -210,7 +210,7 @@ export default function ChakraModal() {
                                             zIndex: 999,
                                         }}>
                                         <TimeContainer>
-                                            <h1>Time: </h1><Clock style={{ color: "white" }} format={'h:mm a'} ticking={true} id="time" />
+                                            <h1>Time: </h1><Clock style={{ color: "#1d1d1d" }} format={'h:mm a'} ticking={true} id="time" />
                                         </TimeContainer>
                                     </ModalBody>
                                     <ModalBody
@@ -297,10 +297,11 @@ export default function ChakraModal() {
                                         </FormControl>
                                     </ModalBody>
                                     <ModalFooter
-                                        css={{ display: "flex", justifyContent: "center", }}
+                                        css={{ display: "flex", justifyContent: "center" }}
                                     >
                                         <Button
                                             className="modalButton"
+                                            style={{ marginRight: "10px", padding: "10px", borderRadius: "5px" }}
                                             id="btn"
                                             value="send"
                                             type="submit"
@@ -308,7 +309,11 @@ export default function ChakraModal() {
                                                 alert("Message Sent. Please Check your inbox")
                                             }}
                                         > Send </Button>
-                                        <Button className="modalButton" onClick={onClose}>
+                                        <Button
+                                            style={{ padding: "10px", borderRadius: "5px" }}
+                                            className="modalButton"
+                                            onClick={onClose}
+                                        >
                                             Close
                                         </Button>
                                     </ModalFooter>
