@@ -12,7 +12,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "antd": "^4.24.12",
     "axios": "^0.24.0",
     "date-and-time": "^3.0.2",
     "framer-motion": "^6.5.1",
@@ -31,9 +30,11 @@
     "react-scripts": "5.0.0",
     "react-slideshow-image": "^3.7.0",
     "react-three-fiber": "^6.0.13",
+    "react-tsparticles": "^2.10.1",
     "sass": "^1.49.7",
     "styled-components": "^5.3.3",
-    "three": "^0.137.5"
+    "three": "^0.137.5",
+    "tsparticles": "^2.11.0"
   },
   "scripts": {
     "start": "react-scripts start",

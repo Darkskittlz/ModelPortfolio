@@ -1,4 +1,3 @@
-import '../App.css';
 import React, { Suspense, useCallback, useMemo, useRef } from 'react';
 import { Canvas, extend, useFrame, useLoader, useThree } from 'react-three-fiber';
 import * as THREE from 'three';

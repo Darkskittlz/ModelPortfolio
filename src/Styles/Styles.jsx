@@ -1,5 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 
+export const PageContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  background-color: black;
+`
+
 export const BodyContainer = styled.div`
   display: flex;
   width: 72%;
@@ -27,7 +33,7 @@ export const BodyContainer = styled.div`
   @media screen and (max-width: 960px) {
       width: 100%;
       height: 105vh;
-      margin-left: 0px;
+      margin-left: -25px;
       margin-top: 20px;
   }
 `
@@ -76,6 +82,7 @@ export const IntroContainer = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: center;
     color: white;
     border-radius: 20px;
@@ -87,7 +94,6 @@ export const IntroContainer = styled.div`
     background: linear-gradient(165deg, rgba(9,9,121,1) 0%, rgba(1,156,188,1) 100%);
 
     div {
-        height: 200px;
         width: 500px;
     }
 
@@ -98,8 +104,7 @@ export const IntroContainer = styled.div`
     h1 {
       padding: 0px;
       border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: -37px;
+
       text-align: center;
       font-size: 30px;
       color: white;
@@ -130,7 +135,7 @@ export const GridContainer = styled.div`
   }
 
   @media only screen and (max-width: 430px){
-    height: 75vh;
+    height: 74vh;
   }
 `
 

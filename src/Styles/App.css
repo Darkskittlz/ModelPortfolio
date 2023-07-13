@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "shakespeare";
+    src: url("../assets/shakespeare.ttf");
+    font-family: "notMyType";
+    src: url("../assets/notMyType.otf");
+}
+
+body {
+    background-color: black;
+}
+
+.app {
+    background-color: black;
+}
+
 .chakra-button {
     height: 20px;
+    margin-top: -31px;
     position: fixed;
 }
 
