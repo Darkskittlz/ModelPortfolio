@@ -26,12 +26,13 @@ export const BodyContainer = styled.div`
 
   @media only screen and (max-width: 1440px){
     padding-bottom: 144px;
+    height: 66vh;
   }
 
   @media only screen and (max-width: 1024px){
     width: 100%;
     margin-left: -18px;
-    height: 71vh;
+    height: 66vh;
   }
 
   @media screen and (max-width: 960px) {
@@ -150,13 +151,17 @@ export const GridContainer = styled.div`
     height: 74vh;
   }
 
-  @media only screen and (max-width: 375px){
-    margin-top: 0px;
-    height: 79vh;
+  @media only screen and (max-width: 425px){
+    height: 73vh;
   }
 
-  @media only screen and (max-width: 330px){
-    height: 55vh;
+  @media only screen and (max-width: 375px){
+    margin-top: 8px;
+    height: 75vh;
+  }
+
+  @media only screen and (max-width: 360px){
+    height: 76vh;
   }
 
   @media only screen and (max-width: 330px){
@@ -209,13 +214,13 @@ export const ImageGridContainer = styled.div`
   @media only screen and (max-width: 430px){
     width: 100%;
     grid-template-columns: 1fr;
-    margin-top: -82px;
+    margin-top: -162px;
     margin-left: 3%;
     
     img {
       border-radius: 10px;
       margin-bottom: 1px;
-      height: 29.2vh;
+      height: 34.2vh;
     }
   }
 
@@ -225,8 +230,21 @@ export const ImageGridContainer = styled.div`
     }
   }
 
+  @media only screen and (max-width: 375px){
+    img {
+      height: 30vh;
+    }
+  }
+
+  @media only screen and (max-width: 360px){
+    img {
+      height: 29.2vh;
+    }
+  }
+
   @media only screen and (max-width: 330px){
-    margin-top: 2px;
+    margin-left: 18px;
+    margin-top: 30px;
 
     img {
       height: 22vh;
@@ -236,7 +254,7 @@ export const ImageGridContainer = styled.div`
   @media only screen and (max-width: 320px){
 
     img {
-      height: 22vh;
+      height: 25vh;
     }
   }
 `
