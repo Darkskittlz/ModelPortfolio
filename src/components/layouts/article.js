@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { GridItemStyle } from '../grid-item'
 import "../../Styles/App.css"
 
 const variants = {
@@ -25,7 +24,6 @@ const Layout = ({ children, title }) => (
           </div>
         )}
         {children}
-        <GridItemStyle />
       </>
     </motion.article>
 )

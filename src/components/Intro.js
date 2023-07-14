@@ -27,7 +27,7 @@ const Intro = (props) => {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["React Developer", "Software Engineer", "Blockchain Engineer", "UI/UX Designer"],
+            strings: ["Model", "Actor", "Programmer"],
         });
     }, []);
   return (

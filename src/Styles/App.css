@@ -94,17 +94,36 @@ nav a {
   display: flex;
   padding: 5px;
   backdrop-filter: blur(10px);
+  margin-left: 5%;
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
-  width: 100%;
+  width: 85%;
   z-index: 1;
   position: relative;
+  overflow-x: hidden;
+  /* Stop horizontal scroll on screens <= 768px */
+}
 
-  @media screen (max-width: 960px) {
-    width: 95%;
+@media (max-width: 780px) {
+  .homePageContainer {
+    margin-left: 10%;
   }
 }
+
+@media (max-width: 430px) {
+  .homePageContainer {
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 380px) {
+  .homePageContainer {
+    margin-left: 5%;
+  }
+}
+
+
 
 .homePageContainer h1 {
   font-size: 20px;
@@ -241,5 +260,25 @@ div.chakra-linkbox.css-16kwgao:hover {
   @media screen and (max-width: 960px) {
     height: 20px;
     margin-top: 0px;
+  }
+}
+
+#portrait {
+  height: 101.2vh;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #portrait {
+    height: 79.2vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #portrait {
+    height: 56.2vh;
+
   }
 }

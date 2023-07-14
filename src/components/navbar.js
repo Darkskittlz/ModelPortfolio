@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { HamburgerIcon } from '@chakra-ui/icons'
-import Logo from './logo'
 import DarkMode from "./DarkMode.js"
 import '../Styles/App.css';
 import { Container, Container2, Div1, Div2, Div3, NavLink, SocialIcons, Span } from '../Styles/HeaderStyles';
 import { GlobalStyle } from '../Styles/GlobalStyles';
 import styled from 'styled-components';
+import MenuIcon from "../assets/menuIcon.svg"
 import {
     Box,
     Stack,
@@ -21,11 +21,6 @@ import {
     Image
 } from '@chakra-ui/react'
 
-import ResumeIcon from '../assets/images/document.png'
-import GithubIcon from '../assets/images/github.svg'
-import MenuIcon from "../assets/images/menuIcon.svg"
-import Resume from "../assets/resume/resume2.pdf"
-import {Modal} from "./Modal";
 
 
 const IconContainer = styled.div`
@@ -108,7 +103,6 @@ const Navbar = props => {
                             <Div1>
                                 <Link href="/">
                                     <Heading as="h1" fontSize={"59px"} size="lg">
-                                        <Logo />
                                     </Heading>
                                 </Link>
                             </Div1>
@@ -120,14 +114,12 @@ const Navbar = props => {
                     <Div3>
                         <SocialIcons href="https://github.com/Darkskittlz" target='_blank'>
                             <IconContainer>
-                                <img src={GithubIcon} />
                             </IconContainer>
                         </SocialIcons>
 
                         <SocialIcons>
                             <IconContainer>
                                 <Link href="/resume/resume.pdf" target="_blank">
-                                    <img src={ResumeIcon}/>
                                     <GlobalStyle />
                                 </Link>
                             </IconContainer>

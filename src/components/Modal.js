@@ -68,6 +68,7 @@ const TimeContainer = styled.div`
         font-size: 25px;
         color: var(--text-color);
         font-weight: 600;
+        margin-bottom: 2px;
     }
 `
 
@@ -82,6 +83,7 @@ const DateContainer = styled.div`
 
     h1 {
         font-size: 23px;
+        margin-top: 6px;
         font-weight: 600;
         color: var(--text-color);
     }
@@ -182,6 +184,8 @@ export default function ChakraModal() {
             cursor: "pointer",
             boxShadow: "0 0 40px rgb(1,74,250)",
             background: "rgb(1,74,250)",
+            color: "white",
+            fontSize: "15px",
             background: "linear-gradient(127deg, rgba(1,74,250,1) 0%, rgba(0,233,71,1) 100%)"
           }}
         >Contact Me</Button>
