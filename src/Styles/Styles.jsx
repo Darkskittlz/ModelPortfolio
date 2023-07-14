@@ -152,7 +152,7 @@ export const GridContainer = styled.div`
   }
 
   @media only screen and (max-width: 425px){
-    height: 73vh;
+    height: 68vh;
   }
 
   @media only screen and (max-width: 375px){
@@ -214,8 +214,8 @@ export const ImageGridContainer = styled.div`
   @media only screen and (max-width: 430px){
     width: 100%;
     grid-template-columns: 1fr;
-    margin-top: -162px;
-    margin-left: 3%;
+    margin-top: -140px;
+    margin-left: 10%;
     
     img {
       border-radius: 10px;
