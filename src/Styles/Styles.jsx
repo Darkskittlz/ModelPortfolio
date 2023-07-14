@@ -20,14 +20,18 @@ export const BodyContainer = styled.div`
   padding: 20px;
   padding-bottom: 40px;
 
+  ::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
   @media only screen and (max-width: 1440px){
     padding-bottom: 144px;
   }
 
   @media only screen and (max-width: 1024px){
     width: 100%;
-    margin-left: 0%;
-    height: 88vh;
+    margin-left: -18px;
+    height: 71vh;
   }
 
   @media screen and (max-width: 960px) {
@@ -35,6 +39,10 @@ export const BodyContainer = styled.div`
       height: 105vh;
       margin-left: -25px;
       margin-top: 20px;
+  }
+
+  @media screen and (max-width: 380px) {
+    margin-top: 3px;
   }
 `
 
@@ -55,6 +63,10 @@ a
       margin-top: 40px;
       justify-content: center;
       margin-bottom: -20px;
+    }
+
+    @media screen and (max-width: 330px) {
+      margin-top: -13px;
     }
 `
 
@@ -137,6 +149,20 @@ export const GridContainer = styled.div`
   @media only screen and (max-width: 430px){
     height: 74vh;
   }
+
+  @media only screen and (max-width: 375px){
+    margin-top: 0px;
+    height: 79vh;
+  }
+
+  @media only screen and (max-width: 330px){
+    height: 55vh;
+  }
+
+  @media only screen and (max-width: 330px){
+    height: 98vh;
+    margin-top: -187px;
+  }
 `
 
 export const Grid2Container = styled.div`
@@ -157,6 +183,8 @@ export const ImageGridContainer = styled.div`
 
   img {
     object-fit: cover;
+    border-radius: 5px;
+    margin: 2px;
     height: 25vh;
   }
 
@@ -166,6 +194,8 @@ export const ImageGridContainer = styled.div`
 
   @media only screen and (max-width: 1024px){
     margin-left: 0px;
+    margin: 0px;
+    
   }
 
   @media only screen and (max-width: 768px){
@@ -179,14 +209,34 @@ export const ImageGridContainer = styled.div`
   @media only screen and (max-width: 430px){
     width: 100%;
     grid-template-columns: 1fr;
-    margin-top: -159px;
+    margin-top: -82px;
     margin-left: 3%;
     
     img {
       border-radius: 10px;
       margin-bottom: 1px;
-      height: 24vh;
-      width: 96.5%;
+      height: 29.2vh;
+    }
+  }
+
+  @media only screen and (max-width: 380px){
+    img {
+      height: 25.8vh;
+    }
+  }
+
+  @media only screen and (max-width: 330px){
+    margin-top: 2px;
+
+    img {
+      height: 22vh;
+    }
+  }
+
+  @media only screen and (max-width: 320px){
+
+    img {
+      height: 22vh;
     }
   }
 `
@@ -206,7 +256,16 @@ export const SocialGridContainer = styled.div`
     margin-right: 20px;
   }
 
+  @media only screen and (max-width: 1440px){
+    width: 73%;
+  }
+
   @media only screen and (max-width: 960px){
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 320px){
+    width: 328px;
     margin-bottom: 10px;
   }
 

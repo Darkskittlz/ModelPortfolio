@@ -8,9 +8,12 @@
     src: url("../assets/notMyType.otf");
 }
 
+
+
 body {
     background-color: black;
 }
+
 
 .app {
     background-color: black;
@@ -27,8 +30,40 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+}
 
-    @media only screen and (max-width: 430px) {
-        width: 96.5%;
+@media only screen and (max-width: 500px) {
+    #portrait {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #portrait {
+        height: 66vh;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #portrait {
+        height: 58vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #portrait {
+        height: 58vh;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #portrait {
+        height: 95vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #portrait {
+        height: 49vh;
     }
 }
