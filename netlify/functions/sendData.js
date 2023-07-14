@@ -11,31 +11,36 @@ exports.handler = async function (event, context, callback) {
         const email = event.queryStringParameters.email
         const mood = event.queryStringParameters.mood
         const message = event.queryStringParameters.message
-        const email2 = "darkskiiittles@gmail.com"
+        const email2 = "tristanneal@pm.me"
 
         const payload = {
             to: `${name} <${email}>`,
             dynamicTemplateData: {
-                greeting: `Hello ${name}`,
-                email: `${email}`,
+                subject: `Hi ${name}, its Tristan!`,
+                greeting: `Hi ${name}, I'll be sure to respond to your email soon. Or feel free to send me a text. `,
                 mood: `${mood}`,
-                message: `${message}`
+                message: `${message}`,
+                signature: `Thanks,`,
+                signature2: `Tristan`,
+                phone: `Phone: 786-475-7908`
             }
         }
 
         const payload2 = {
-            to: `Tristan <${email2}>`,
+            to: `Model Site Sendgrid E-Mail <${email2}>`,
             dynamicTemplateData: {
-                greeting: `Hello Tristan. New Email from ${email}`,
+                subject: `New Email from ${name}`,
+                email: `${email}`,
                 mood: `${mood}`,
-                message: `${message}`
+                message: `${message}`,
+                message2: `Yoooo, this is an email from your Model Portfolio site`
             }
         }
 
         await mail.send({
-            from: 'DarkMeow Productions <noreply@darkmeowproductions.com>',
+            from: 'Tristan <noreply@darkmeowproductions.com>',
             replyTo: "noreply@darkmeowproductions.com",
-            templateId: 'd-8da3e4888cde4a91844ea627de285e7b',
+            templateId: 'd-3b4091f044574fe98b4461b6cc0f3d01',
             personalizations: [payload, payload2]
         });
 
