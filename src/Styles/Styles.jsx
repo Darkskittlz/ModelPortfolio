@@ -1,50 +1,21 @@
 import styled, { keyframes } from 'styled-components';
 
-export const PageContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  background-color: black;
-`
 
 export const BodyContainer = styled.div`
   display: flex;
-  width: 72%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
+  height: 88vh;
   flex-direction: column;
   justify-content; center;
+  align-items: center;
   z-index: 999;
   position: fixed;
   top: 0; 
   overflow-y: scroll;
-  padding: 20px;
-  padding-bottom: 40px;
 
   ::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
-
-  @media only screen and (max-width: 1440px){
-    padding-bottom: 144px;
-    height: 66vh;
-  }
-
-  @media only screen and (max-width: 1024px){
-    width: 100%;
-    margin-left: -18px;
-    height: 66vh;
-  }
-
-  @media screen and (max-width: 960px) {
-      width: 100%;
-      height: 105vh;
-      margin-left: -25px;
-      margin-top: 20px;
-  }
-
-  @media screen and (max-width: 380px) {
-    margin-top: 3px;
-  }
 `
 
 export const NavContainer = styled.div`
@@ -57,18 +28,6 @@ export const NavContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: flex;
     box-shadow: 0 0 10px #09DEEE; 
-
-a
-
-    @media screen and (max-width: 960px) {
-      margin-top: 40px;
-      justify-content: center;
-      margin-bottom: -20px;
-    }
-
-    @media screen and (max-width: 330px) {
-      margin-top: -13px;
-    }
 `
 
 export const Animation = keyframes`
@@ -123,67 +82,37 @@ export const IntroContainer = styled.div`
       color: white;
     }
 
-    @media screen and (max-width: 960px) {
-      width: 90%;
-      height: 70px;
-
-      h1 {
-        flex-direction: column;
-        font-size: 18px;
-      }
+    @media (max-width: 1200px) {
+      margin-top: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+  
+    @media (max-width: 480px) {
+      width: 50%;
+      heigth: 80px;
+      margin-top: 10px;
     }
 `
 
-export const GridContainer = styled.div`
-  margin-top: 10px;
-  margin-bottom: 40px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media only screen and (max-width: 960px){
-    height: 72vh;
-    overflow-y: scroll;
-  }
-
-  @media only screen and (max-width: 430px){
-    height: 74vh;
-  }
-
-  @media only screen and (max-width: 425px){
-    height: 68vh;
-  }
-
-  @media only screen and (max-width: 375px){
-    margin-top: 8px;
-    height: 75vh;
-  }
-
-  @media only screen and (max-width: 360px){
-    height: 76vh;
-  }
-
-  @media only screen and (max-width: 330px){
-    height: 98vh;
-    margin-top: -187px;
-  }
-`
-
 export const Grid2Container = styled.div`
-  display: flex;
-  position: relative;
-  z-index:999;
-  width: 20%;
-  justify-content: center;
-  align-items: flex-end;
+display: flex;
+position: relative;
+z-index:999;
+width: 20%;
+justify-content: center;
+align-items: flex-end;
 `
+
 export const ImageGridContainer = styled.div`
   display: grid;
+  margin-top: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
   flex-direction: column;
-  height: 64vh;
+  justify-items: center;
+  height: 55vh;
   object-fit: cover;
 
   img {
@@ -192,67 +121,24 @@ export const ImageGridContainer = styled.div`
     margin: 2px;
     height: 25vh;
   }
-
-  @media only screen and (max-width: 1759px){
-    height: 50vh;
-  }
-
-  @media only screen and (max-width: 1024px){
-    margin-left: 0px;
-    margin: 0px;
-    
-  }
-
-  @media only screen and (max-width: 768px){
+  
+  @media (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
-    
+
     img {
-      height: 27vh;
+      height: 35vh;
     }
   }
 
-  @media only screen and (max-width: 430px){
-    width: 100%;
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    margin-top: -140px;
-    margin-left: 10%;
-    
+
     img {
-      border-radius: 10px;
-      margin-bottom: 1px;
-      height: 34.2vh;
+      height: 35vh;
     }
   }
 
-  @media only screen and (max-width: 380px){
-    img {
-      height: 25.8vh;
-    }
-  }
-
-  @media only screen and (max-width: 375px){
-    img {
-      height: 30vh;
-    }
-  }
-
-  @media only screen and (max-width: 360px){
-    img {
-      height: 29.2vh;
-    }
-  }
-
-  @media only screen and (max-width: 330px){
-    margin-left: 18px;
-    margin-top: 30px;
-
-    img {
-      height: 22vh;
-    }
-  }
-
-  @media only screen and (max-width: 320px){
-
+  @media (max-width: 480px) {
     img {
       height: 25vh;
     }
@@ -263,7 +149,8 @@ export const SocialGridContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   bottom: 0;
   border-radius: 10px;
   position: fixed;
@@ -274,18 +161,6 @@ export const SocialGridContainer = styled.div`
     margin-right: 20px;
   }
 
-  @media only screen and (max-width: 1440px){
-    width: 73%;
-  }
-
-  @media only screen and (max-width: 960px){
-    margin-bottom: 10px;
-  }
-
-  @media only screen and (max-width: 320px){
-    width: 328px;
-    margin-bottom: 10px;
-  }
 
 `
 

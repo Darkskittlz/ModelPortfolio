@@ -32,52 +32,15 @@ body {
     align-items: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 768px) {
     #portrait {
-        height: 60vh;
+        height: 79.2vh;
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media (max-width: 480px) {
     #portrait {
-        height: 66vh;
-    }
-}
+        height: 56.2vh;
 
-@media only screen and (max-width: 425px) {
-    #portrait {
-        height: 77vh;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    #portrait {
-        height: 77vh;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    #portrait {
-        height: 67vh;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    #portrait {
-        height: 66vh;
-    }
-}
-
-
-
-@media only screen and (max-width: 330px) {
-    #portrait {
-        height: 95vh;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #portrait {
-        height: 57vh;
     }
 }

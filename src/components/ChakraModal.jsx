@@ -72,7 +72,6 @@ const DateContainer = styled.div`
         font-size: 23px;
         font-weight: 500;
         color: #000000;
-        margin-bottom: 0px;
     }
 `
 
@@ -89,6 +88,10 @@ const IMGContainer = styled.div`
     z-index:999;
     height: 450px;
     margin-top: 220px;
+
+    @media screen and (max-width: 1440px) {
+        height: 240px;
+    }
 
     @media screen and (max-width: 960px) {
       height: 200px;
@@ -297,7 +300,7 @@ export default function ChakraModal() {
                                         </FormControl>
                                     </ModalBody>
                                     <ModalFooter
-                                        css={{ display: "flex", justifyContent: "center" }}
+                                        css={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
                                     >
                                         <Button
                                             className="modalButton"

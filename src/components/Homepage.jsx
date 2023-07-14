@@ -17,10 +17,9 @@ export default function Homepage() {
     });
     return (
         <>
-            <PageContainer>
-                <StarBackground />
-                <BodyContainer>
-                    {/* <Navbar bg="dark" data-bs-theme="dark">
+            <StarBackground />
+            <BodyContainer>
+                {/* <Navbar bg="dark" data-bs-theme="dark">
                     <NavContainer>
                         <Navbar.Brand style={{ color: "white" }} href="#home">Home</Navbar.Brand>
                         <Navbar.Brand style={{ color: "white" }} href="#film">Film</Navbar.Brand>
@@ -28,21 +27,19 @@ export default function Homepage() {
                         <Navbar.Brand style={{ color: "white" }} href="#content">Content</Navbar.Brand>
                     </NavContainer>
                 </Navbar> */}
-                    <IntroGridContainer>
-                        <IntroContainer>
-                            <div>
-                                <h1>
-                                    <h1 id="Title">Tristan Neal</h1>
-                                </h1>
-                            </div>
-                        </IntroContainer>
-                    </IntroGridContainer>
-
-                    <GridContainer>
-                        <MyGallery />
-                    </GridContainer>
-                </BodyContainer>
-            </PageContainer>
+                <IntroGridContainer>
+                    <IntroContainer>
+                        <div>
+                            <h1>
+                                <h1 id="Title">Tristan Neal</h1>
+                            </h1>
+                        </div>
+                    </IntroContainer>
+                </IntroGridContainer>
+                
+                <MyGallery />
+                
+            </BodyContainer>
         </>
     )
 }
