@@ -11,9 +11,14 @@ const NavContainer = styled.div`
     width: 100%;
     justify-content: center;
     z-index: 2;
+
     
     @media (max-width: 960px){
-        width: 50%;
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        margin: 10px;
+        height: 80px;
+        width: 80%;
         margin-left: 12%;
         z-index: 2;
         position: relative;

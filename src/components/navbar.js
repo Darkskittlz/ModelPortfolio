@@ -58,10 +58,11 @@ const GridContainer = styled.div`
     backdrop-filter: blur(20px);
 
 	@media (max-width: 960px) {
-		flex-direction: column;
+		flex-direction: row;
         width: 100%;
+        margin-top: -20px;
+        backdrop-filter: blur(20px);
         backdrop-filter: none;
-        margin-left: 50%;
         justify-content: center;
 	}
 `
@@ -94,36 +95,22 @@ const Navbar = props => {
                             bg="none"
                             position="relative"
                             as="nav"
-                            w="50%"
-                            h="80px"
+                            h="70px"
+                            pt="10px"
+                            ml="20px"
                             wrap="wrap"
                             zIndex={2}
                             {...props}
                         >
-                            <Div1>
-                                <Link href="/">
-                                    <Heading as="h1" fontSize={"59px"} size="lg">
-                                    </Heading>
-                                </Link>
-                            </Div1>
+                            <Heading as="h1" color="white" fontSize={"30px"} size="lg">
+                                Tristan Neal
+                            </Heading>
                         </Box>
                     </Container2>
                 </Grid1>
 
                 <Grid2>
                     <Div3>
-                        <SocialIcons href="https://github.com/Darkskittlz" target='_blank'>
-                            <IconContainer>
-                            </IconContainer>
-                        </SocialIcons>
-
-                        <SocialIcons>
-                            <IconContainer>
-                                <Link href="/resume/resume.pdf" target="_blank">
-                                    <GlobalStyle />
-                                </Link>
-                            </IconContainer>
-                        </SocialIcons>
                         <DarkMode />
                         <Box>
                             <Menu>
@@ -143,15 +130,6 @@ const Navbar = props => {
                                     <Link color="var(--text-color)" href='/'>
                                         <MenuItem as={Link}>Home</MenuItem>
                                     </Link>
-                                    <Link color="var(--text-color)" href='/works'>
-                                        <MenuItem as={Link}>Works</MenuItem>
-                                    </Link>
-                                    <Link color="var(--text-color)" href='/posts'>
-                                        <MenuItem as={Link}>Blog</MenuItem>
-                                    </Link>
-                                    {/* <Link color="var(--text-color)" href='/tutorials'>
-                                        <MenuItem as={Link}>Tutorials</MenuItem>
-                                    </Link> */}
                                 </MenuList>
                             </Menu>
                         </Box>

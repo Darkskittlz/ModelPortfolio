@@ -15,8 +15,6 @@ const SectionTitle = styled.h2`
 `
 
 const GridContainer = styled.div`
-    margin-top: 20px;
-    margin-bottom: 20px;
 `
 
 const Intro = (props) => {
@@ -24,7 +22,7 @@ const Intro = (props) => {
 
     useEffect(()=> {
         init(textRef.current, {
-            showCursor: true,
+            showCursor: false,
             backDelay: 1500,
             backSpeed: 60,
             strings: ["Model", "Actor", "Programmer"],
@@ -38,12 +36,13 @@ const Intro = (props) => {
                     <Container1 main>
                         <motion.div initial="hidden" animate="visible" variants={{
                             hidden: {
-                                scale: .8,
+                                scale: .5,
                                 opacity: 0
                             },
                             visible: {
-                                scale: 1,
+                                scale: 0.8,
                                 opacity: 1,
+                                padding: 4,
                                 transition: {
                                     delay: .4
                                 }
@@ -51,7 +50,6 @@ const Intro = (props) => {
                         }}>
                             <Container2>
                                 <SectionTitle>Tristan Neal</SectionTitle>
-                                <h3> <span id="spanText" ref={textRef}></span></h3>    
                             </Container2>
                         </motion.div>
                     </Container1>  

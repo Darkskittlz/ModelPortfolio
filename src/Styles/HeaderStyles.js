@@ -23,7 +23,7 @@ export const Span = styled.span`
 `
 
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-content: center;

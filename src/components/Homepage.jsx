@@ -43,14 +43,6 @@ const Homepage = () => {
 	return (
 		<>
 			<StarBackground />
-
-			<Suspense fallback={null}>
-				<Planet />
-			</Suspense>
-			<Section delay={0.1}>
-				<Intro />
-			</Section>
-
 			<Container className="homePageContainer" >
 				<Section delay={0.2}>
 					<HeadingContainer>

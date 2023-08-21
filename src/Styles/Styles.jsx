@@ -118,7 +118,7 @@ export const ImageGridContainer = styled.div`
   flex-direction: column;
   justify-items: center;
   grid-gap: 0px;
-  height: 55vh;
+  height: 70vh;
   object-fit: cover;
 
   img {
